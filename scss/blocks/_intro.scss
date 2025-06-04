@@ -1,0 +1,103 @@
+.intro__analytics {
+  background: $background-dark-blue;
+  padding-top: 50px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+
+  nav {
+    // flex-grow: 1;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 80px;
+
+    img {
+      margin-right: 12px;
+    }
+
+    p {
+      font-size: 20px;
+      color: #fff;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.header__menu {
+  &-list {
+    display: flex;
+    // gap: 36px;
+    // text-decoration: none;
+    // color: $gray;
+  }
+
+  &-item {
+    margin-right: 36px;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.header__btns {
+  &-transparent {
+    @include btn(transparent, transparent, 68px, $gray, 16px, 10px, 53px);
+  }
+
+  &-circled {
+    @include btn($light-gray, transparent, 68px, $gray, 16px, 10px, 53px);
+  }
+}
+
+.dashboard {
+  display: flex;
+  padding-top: 150px;
+  padding-bottom: 258px;
+
+  &__info {
+    max-width: 550px;
+    padding-top: 248px;
+
+    &-title {
+      position: relative;
+      z-index: 1;
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 120%;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    &-text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: $gray;
+        margin-bottom: 50px;
+    }
+
+    &-btn {
+        @include btn(transparent, $pink, 68px, #fff, 16px, 15px, 80px)
+    }
+  }
+
+  &__pictures {
+    position: relative;
+    z-index: 1;
+
+    img {
+        box-shadow: 0 19px 53px -16px rgba(25, 42, 89, 0.2);
+        border-radius: 32px;
+        margin-top: 50px;
+    }
+
+  }
+}
