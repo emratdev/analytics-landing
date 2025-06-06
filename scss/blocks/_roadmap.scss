@@ -37,3 +37,25 @@
     overflow: hidden;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .roadmap {
+    &__item {
+      flex-direction: column;
+      margin-bottom: 90px;
+      gap: 30px;
+    }
+
+    &__description {
+      min-height: 50%;
+    }
+
+    &__title {
+      font-size: 32px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+  }
+}

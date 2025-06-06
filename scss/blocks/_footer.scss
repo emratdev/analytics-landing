@@ -38,6 +38,23 @@
   &_links {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 135px;
   }
+}
+
+
+@media screen and (max-width: 768px) {
+    .footer__menu-list {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .footer__menu-wrapper {
+        flex-flow: column wrap;
+        align-items: center;
+        gap: 35px;
+        padding-top: 43px;
+    }
 }

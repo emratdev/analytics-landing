@@ -8,14 +8,14 @@
   </head>
   <body class="container">
     <section class="intro__analytics">
-      <div class="wrap">
+      <div class="wrap wrap__padding">
         <header class="header">
           <a href="#! " class="header__logo">
             <img src="./assets/icons/logo.svg" alt="" />
             <p>Analytics</p>
           </a>
 
-          <nav class="header__menu">
+          <nav class="header__menu header__menu-adaptive">
             <ul class="header__menu-list">
               <li class="header__menu-item"><a href="#!">Products</a></li>
               <li class="header__menu-item"><a href="#!">Pricing</a></li>
@@ -27,7 +27,32 @@
 
           <div class="header__btns">
             <button class="header__btns-transparent">Sign in</button>
-            <button class="header__btns-circled">Sign Up</button>
+            <button class="header__btns-circled header__menu-adaptive">
+              Sign Up
+            </button>
+          </div>
+
+          <div class="header__menu-btn">
+            <input type="checkbox" />
+            <nav class="header__menu header__menu-side">
+              <ul class="header__menu-list">
+                <li class="header__menu-item">
+                  <a href="#!" class="header__menu-link">Products</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#!" class="header__menu-link">Pricing</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#!" class="header__menu-link">FAQ</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#!" class="header__menu-link">Blog</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#!" class="header__menu-link">Analytics</a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </header>
 
@@ -45,13 +70,13 @@
           </div>
 
           <div class="dashboard__pictures">
-            <img src="./assets/img/chart-3.jpg" alt="small-chart " />
+            <img src="./assets/img/chart6.jpg" alt="small-chart " />
           </div>
         </div>
       </div>
     </section>
 
-    <section class="main__features wrap">
+    <section class="main__features wrap wrap__padding">
       <h2 class="main__features-title">Main Features</h2>
       <p class="main__features-text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi
@@ -102,7 +127,7 @@
       </div>
     </section>
 
-    <section class="roadmap wrap">
+    <section class="roadmap wrap wrap__padding">
       <div class="roadmap__item">
         <div class="roadmap__description">
           <h3 class="roadmap__title">Automated Reports & Widget Alerts</h3>
@@ -155,7 +180,7 @@
     </section>
 
     <section class="pricing">
-      <div class="wrap">
+      <div class="wrap wrap__padding">
         <div class="pricing__description">
           <h3 class="pricing__description-title">Pricing Plans</h3>
           <p class="pricing__description-text">
@@ -199,44 +224,62 @@
     </section>
 
     <footer class="footer__menu">
-        <div class="footer__menu-wrapper wrap">
-            <div class="footer__menu-logo">
-                <img src="./assets/icons/logo.svg" alt="">
-                <p>Analytics</p>
-            </div>
-
-            <ul class="footer__menu-list">
-                <li class="footer__menu-item">
-                    <a href="#!" class="footer__menu-link">Product</a>
-                </li>
-
-                 <li class="footer__menu-item">
-                    <a href="#!" class="footer__menu-link">Pricing Plans</a>
-                </li>
-
-                 <li class="footer__menu-item">
-                    <a href="#!" class="footer__menu-link">FAQ</a>
-                </li>
-
-                 <li class="footer__menu-item">
-                    <a href="#!" class="footer__menu-link">Blog</a>
-                </li>
-            </ul>
-
-            <div class="footer__menu_links">
-                <a href="#!">
-                    <img class="footer__menu_link-icon" width="10" height="20" src="./assets/icons/Facebook.svg" alt="Facebook">
-                </a>
-
-                <a href="#!">
-                    <img class="footer__menu_link-icon" width="25" height="20" src="./assets/icons/Twitter.svg" alt="Twitter">
-                </a>
-
-                <a href="#!"> 
-                    <img class="footer__menu_link-icon"     width="20" height="20" src="./assets/icons/Instagram.svg" alt="Instagram">
-                </a>
-            </div>
+      <div class="footer__menu-wrapper wrap">
+        <div class="footer__menu-logo">
+          <img src="./assets/icons/logo.svg" alt="" />
+          <p>Analytics</p>
         </div>
+
+        <ul class="footer__menu-list">
+          <li class="footer__menu-item">
+            <a href="#!" class="footer__menu-link">Product</a>
+          </li>
+
+          <li class="footer__menu-item">
+            <a href="#!" class="footer__menu-link">Pricing Plans</a>
+          </li>
+
+          <li class="footer__menu-item">
+            <a href="#!" class="footer__menu-link">FAQ</a>
+          </li>
+
+          <li class="footer__menu-item">
+            <a href="#!" class="footer__menu-link">Blog</a>
+          </li>
+        </ul>
+
+        <div class="footer__menu_links">
+          <a href="#!">
+            <img
+              class="footer__menu_link-icon"
+              width="10"
+              height="20"
+              src="./assets/icons/Facebook.svg"
+              alt="Facebook"
+            />
+          </a>
+
+          <a href="#!">
+            <img
+              class="footer__menu_link-icon"
+              width="25"
+              height="20"
+              src="./assets/icons/Twitter.svg"
+              alt="Twitter"
+            />
+          </a>
+
+          <a href="#!">
+            <img
+              class="footer__menu_link-icon"
+              width="20"
+              height="20"
+              src="./assets/icons/Instagram.svg"
+              alt="Instagram"
+            />
+          </a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
