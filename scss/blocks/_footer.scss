@@ -1,0 +1,43 @@
+.footer__menu {
+  background: $background-dark-blue;
+
+  &-wrapper {
+    border-top: 1px solid #2a407c;
+    padding-top: 63px;
+    padding-bottom: 103px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-logo {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 10px;
+    }
+
+    p {
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 20px;
+    }
+  }
+
+  &-list {
+    width: 293px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-link {
+    text-decoration: none;
+  }
+
+  &_links {
+    display: flex;
+    justify-content: space-between;
+    width: 135px;
+  }
+}

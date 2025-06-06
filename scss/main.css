@@ -26,10 +26,6 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-body {
-  line-height: 1;
-}
-
 ol, ul {
   list-style: none;
 }
@@ -94,6 +90,19 @@ img {
   width: 100%;
   height: 100%;
   background: #172755;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+}
+.intro__analytics::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: -17px;
+  width: 100%;
+  height: 100%;
+  background: #ef2a82;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
           clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
 }
@@ -206,6 +215,18 @@ img {
   font-size: 16px;
   padding: 15px 80px;
   cursor: pointer;
+  transition: all 0.5s;
+  position: relative;
+  z-index: 2;
+}
+.dashboard__info-btn:hover {
+  border: 1px solid #ef2a82;
+  background: transparent;
+  border-radius: 68px;
+  color: #fff;
+  font-size: 16px;
+  padding: 15px 80px;
+  cursor: pointer;
 }
 .dashboard__pictures {
   position: relative;
@@ -227,4 +248,262 @@ img {
   box-shadow: 0 18px 50px -15px rgba(25, 42, 89, 0.2);
   border-radius: 30px;
   z-index: -1;
+}
+
+.main__features {
+  margin-bottom: 130px;
+}
+.main__features-title {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #172755;
+}
+.main__features-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #8794ba;
+  margin-bottom: 81px;
+}
+.main__features-items {
+  display: flex;
+  justify-content: space-between;
+}
+.main__features-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 380px;
+}
+.main__features-item img {
+  margin-bottom: 30px;
+  width: 60px;
+  height: 60px;
+}
+.main__features-item h3 {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #172755;
+  margin-bottom: 15px;
+}
+.main__features-item p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+}
+
+.roadmap__item, .roadmap__item-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 120px;
+}
+.roadmap__item-right {
+  flex-direction: row-reverse;
+}
+.roadmap__description {
+  max-width: 480px;
+}
+.roadmap__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  margin-bottom: 30px;
+}
+.roadmap__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #8794ba;
+}
+.roadmap__picture {
+  max-width: 600px;
+  height: auto;
+  border-radius: 25 px;
+  box-shadow: 0 18px 50px -15px rgba(25, 42, 89, 0.2);
+  overflow: hidden;
+}
+
+.pricing {
+  position: relative;
+  padding-top: 280px;
+  padding-bottom: 100px;
+}
+.pricing::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #172755;
+  -webkit-clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
+}
+.pricing::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -17px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #ef2a82;
+  -webkit-clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
+}
+.pricing__description {
+  margin-bottom: 80px;
+}
+.pricing__description-title {
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.pricing__description-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #8794ba;
+  margin: 0 auto;
+  max-width: 54 0px;
+}
+.pricing__rates {
+  display: flex;
+  justify-content: space-between;
+}
+.pricing__rates_item {
+  border-radius: 30px;
+  box-shadow: 0 18px 50px -15px rgba(25, 42, 89, 0.2);
+  background-color: #0f1f4b;
+  padding: 50px 66px 70px;
+  text-align: center;
+}
+.pricing__rates_item-title {
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.pricing__rates_item-text {
+  position: relative;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #8794ba;
+  margin-bottom: 66px;
+}
+.pricing__rates_item-text::before {
+  content: "";
+  position: absolute;
+  top: 220%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 220px;
+  height: 1px;
+  background: #d3d9e9;
+}
+.pricing__rates_item-price {
+  font-weight: 700;
+  font-size: 60px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 5px;
+}
+.pricing__rates_item-currency {
+  font-size: 30px;
+}
+.pricing__rates_item-subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #8794ba;
+}
+.pricing__rates_item-btn {
+  border: 1px solid #2a407c;
+  background: transparent;
+  border-radius: 68px;
+  color: #fff;
+  font-size: 16px;
+  padding: 15px 80px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.pricing__rates_item-pink {
+  box-shadow: 0 18px 50px -15px #060f28;
+  background: #fff;
+}
+.pricing__rates_item-pink .pricing__rates_item-title, .pricing__rates_item-pink .pricing__rates_item-price {
+  color: #172755;
+}
+.pricing__rates_item-pink .pricing__rates_item-btn {
+  border: 1px solid #ef2a82;
+  background: #ef2a82;
+  border-radius: 68px;
+  color: #fff;
+  font-size: 16px;
+  padding: 15px 80px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.pricing__rates_item-pink .pricing__rates_item-btn:hover {
+  border: 1px solid #ef2a82;
+  background: transparent;
+  border-radius: 68px;
+  color: #ef2a82;
+  font-size: 16px;
+  padding: 15px 80px;
+  cursor: pointer;
+}
+
+.footer__menu {
+  background: #172755;
+}
+.footer__menu-wrapper {
+  border-top: 1px solid #2a407c;
+  padding-top: 63px;
+  padding-bottom: 103px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__menu-logo {
+  display: flex;
+  align-items: center;
+}
+.footer__menu-logo img {
+  margin-right: 10px;
+}
+.footer__menu-logo p {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.footer__menu-list {
+  width: 293px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__menu-link {
+  text-decoration: none;
+}
+.footer__menu_links {
+  display: flex;
+  justify-content: space-between;
+  width: 135px;
 }/*# sourceMappingURL=main.css.map */
